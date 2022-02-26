@@ -13,4 +13,4 @@ This is the second project of the Web Development program at Practicum by Yandex
 
 ## Plan on improving the project
 
-Add your ideas here :)
+Linking this project in the future to a server so that the data can be uploaded from the form.

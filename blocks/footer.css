@@ -29,6 +29,11 @@
   color: #fff;
   margin: 0;
   padding: 0;
+  transition: color 0.5 ease-out;
+}
+
+.footer__social-link:hover {
+  color: #c1c1c1;
 }
 
 .footer__list {
