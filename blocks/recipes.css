@@ -50,7 +50,7 @@
   line-height: 30px;
 }
 
-.recipes__video_column {
+.recipes__video-column {
   display: flex;
   list-style-type: none;
   flex-flow: column;
