@@ -32,7 +32,6 @@
   margin: 0 auto;
   text-align: center;
   max-width: 780px;
-  padding-bottom: 100px;
 }
 
 .menu__cards {
@@ -41,5 +40,5 @@
   justify-content: center;
   column-gap: 100px;
   row-gap: 100px;
-  padding: 0 0 100px 0;
+  padding: 100px 0 100px 0;
 }

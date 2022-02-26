@@ -32,6 +32,7 @@
   top: 100px;
   left: 80px;
   z-index: 1;
+  width: 251px;
 }
 
 .about__content {
@@ -48,6 +49,7 @@
   font-size: 20px;
   line-height: 30px;
   margin: 0;
+  width: 648px;
 }
 
 .about__circle {
