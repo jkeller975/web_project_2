@@ -1,11 +1,13 @@
 .menu {
   width: 100vw;
+  max-width: 100%;
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0a2750;
   background-image: url(../images/background_menu.svg);
+  overflow: hidden;
 }
 
 .menu__title {
