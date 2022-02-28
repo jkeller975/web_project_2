@@ -12,7 +12,7 @@
     <meta name="author" content="Josh Keller" />
     <meta name="keywords" content="HTML" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="favicon_coffee_bean.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,8 +42,6 @@
         </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
-        </p>
-        <p class="header__description">
           the cozy vibes to help you get creative.
         </p>
         <img
@@ -51,18 +49,18 @@
           alt="Inside Practicum Coffee Shop"
           class="header__image"
         />
-        <div class="header__paragraph">
+        <div class="header__columns">
           <div>
             <ul class="header__list">
-              <li class="header__list-item">Hours:</li>
-              <li class="header__list-item">Monday - Friday (10:00 - 19:00)</li>
-              <li class="header__list-item">
+              <li class="header__paragraph">Hours:</li>
+              <li class="header__paragraph">Monday - Friday (10:00 - 19:00)</li>
+              <li class="header__paragraph">
                 Saturday - Sunday (11:00 - 18:00)
               </li>
             </ul>
           </div>
           <div>
-            <p class="header__address">
+            <p class="header__paragraph">
               200 Success Avenue, The Town of Practicum
             </p>
           </div>
@@ -70,14 +68,11 @@
       </header>
       <main class="content">
         <section class="menu" id="menu">
-          <h1 class="menu__title">Menu</h1>
-          <h2 class="menu__subtitle">
+          <h2 class="menu__title">Menu</h2>
+          <h3 class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
-            use
-          </h2>
-          <h2 class="menu__subtitle">
-            biodegradable cups. All teas from our collection and $2/cup.
-          </h2>
+            use biodegradable cups. All teas from our collection and $2/cup.
+          </h3>
           <div class="menu__cards">
             <div class="card">
               <h3 class="card__title">Filter</h3>
@@ -161,20 +156,18 @@
           </div>
         </section>
         <section class="recipes" id="recipes">
-          <h1 class="recipes__title">Recipes</h1>
-          <h2 class="recipes__subtitle">
-            Check out some recipes we've collected for
-          </h2>
-          <h2 class="recipes__subtitle">your home-brewing convience:</h2>
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convience:
+          </p>
           <div class="recipes__videos">
             <div class="recipes__video-column">
               <iframe
-                width="480"
-                height="273"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                class="recipes__video"
                 allowfullscreen
               ></iframe>
               <div class="recipes__video-caption">
@@ -184,11 +177,9 @@
             </div>
             <div class="recipes__video-column">
               <iframe
-                width="480"
-                height="273"
+                class="recipes__video"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
@@ -200,10 +191,10 @@
           </div>
         </section>
         <section class="reservation" id="reservation">
-          <h1 class="reservation__title">Book a table</h1>
+          <h2 class="reservation__title">Book a table</h2>
           <form class="form reservation__form">
-            <fieldset class="reservation__form">
-              <label class="form__label">Name *</label>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Name *</label>
               <input
                 type="text"
                 class="form__input"
@@ -212,8 +203,8 @@
                 required
               />
             </fieldset>
-            <fieldset class="reservation__form">
-              <label class="form__label">Number of guests *</label>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="number">Number of guests *</label>
               <input
                 type="number"
                 class="form__input"
@@ -224,12 +215,12 @@
                 required
               />
             </fieldset>
-            <fieldset class="reservation__form">
-              <label class="form__label">Date & time *</label>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="date">Date & time *</label>
               <input type="date" class="form__input" id="date" required />
             </fieldset>
-            <fieldset class="reservation__form">
-              <label class="form__label">Your email *</label>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="email">Your email *</label>
               <input
                 type="email"
                 class="form__input"
@@ -238,10 +229,10 @@
                 required
               />
             </fieldset>
-            <fieldset class="reservation__form">
+            <fieldset class="form__fieldset">
               <button type="submit" class="form__button">Book a table</button>
             </fieldset>
-            <fieldset class="reservation__form-terms">
+            <fieldset class="form__fieldset form__fieldset_terms">
               <input
                 type="checkbox"
                 class="form__checkbox"
@@ -255,25 +246,25 @@
           </form>
         </section>
         <section class="about" id="about">
-          <h1 class="about__title">About the coffee shop</h1>
-          <div class="about__content">
-            <p class="about__paragraph">
-              Our coffee shop is located in the Practicum Library's hall. It
-              features 6 tables and free WiFi.
-            </p>
-            <p></p>
-            <p class="about__paragraph">
-              Our main mission is keeping guests cozy and energized.
-            </p>
-            <p></p>
-            <p class="about__paragraph">
-              Besides that, we try to reduce our environmental impact — so we
-              don't sell single-use cups. But you can buy one of our reusable
-              cups!
-            </p>
+          <div class="about__column">
+            <h2 class="about__title">About the coffee shop</h2>
+            <div class="about__content">
+              <p class="about__paragraph">
+                Our coffee shop is located in the Practicum Library's hall. It
+                features 6 tables and free WiFi.
+              </p>
+              <p class="about__paragraph">
+                Our main mission is keeping guests cozy and energized.
+              </p>
+              <p class="about__paragraph">
+                Besides that, we try to reduce our environmental impact — so we
+                don't sell single-use cups. But you can buy one of our reusable
+                cups!
+              </p>
+            </div>
           </div>
           <div class="about__circle"></div>
-          <div class="about__circle-animation-blurred"></div>
+          <div class="about__circle_animation-blurred"></div>
         </section>
       </main>
       <footer class="footer">
