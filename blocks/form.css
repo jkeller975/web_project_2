@@ -8,7 +8,7 @@
   margin: 0 0 8px 0;
 }
 
-.form__label[for="terms"] {
+.form__label_terms {
   display: inline;
   vertical-align: middle;
   padding-left: 12px;
